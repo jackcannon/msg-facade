@@ -1,5 +1,5 @@
 # msgFacade
 
-wrap message/event passing communication with simple function calls
+Wrap message bus communication with simple function calls
 
 // TODO docs
