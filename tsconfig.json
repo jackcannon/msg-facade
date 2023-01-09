@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "lib": ["es2019"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": false,
+    "downlevelIteration": true
+  }
+}

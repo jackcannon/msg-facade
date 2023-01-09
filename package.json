@@ -1,0 +1,34 @@
+{
+  "name": "msg-facade",
+  "version": "1.0.0",
+  "author": "Jack Cannon <jackc@annon.co.uk> (http://c.annon.co.uk/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jackcannon/mag-facade.git"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "tsup": "^6.2.1",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "build": "tsup-node src/index.ts --format cjs,esm --dts --clean",
+    "watch": "yarn build -- --watch src",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "swiss-ak": "^1.16.0"
+  }
+}
