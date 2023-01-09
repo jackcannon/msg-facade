@@ -1,4 +1,4 @@
-import { DeferredPromise, getDeferred } from '../PromiseUtils';
+import { DeferredPromise, getDeferred } from 'swiss-ak';
 import { MsgFacadeProxy } from './types';
 
 export const handleExit = (proxy: MsgFacadeProxy<any>): DeferredPromise<{ proxy: MsgFacadeProxy<any>; value: any }> => {
